@@ -1,0 +1,28 @@
+.bg-purple {
+  background-color: purple; /* Define el color morado como fondo */
+  color: white; /* Cambia el color del texto para que sea legible en fondo morado */
+}
+
+.footer a {
+  color: #333; /* Color de texto predeterminado */
+  text-decoration: none; /* Quita la subrayado por defecto */
+  display: inline-block; /* Muestra los enlaces como elementos en línea con espacios alrededor */
+  padding: 5px 10px; /* Agrega espacio interno a los enlaces */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición de escala y sombra */
+  border: 2px solid transparent; /* Borde transparente por defecto */
+  border-radius: 5px; /* Agrega bordes redondeados */
+}
+
+/* Efecto de levantamiento y borde al hacer hover */
+.footer a:hover {
+  color: #fff; /* Cambia el color de texto al hacer hover */
+  background-color: #8a2be2; /* Cambia el color de fondo al hacer hover */
+  transform: translateY(-4px); /* Eleva el elemento al hacer hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra al hacer hover */
+  border: 1px solid #fff; /* Agrega un borde blanco al hacer hover */
+}
+
+.footer-h{
+  color: white;
+  font-size: 5rem;
+}
