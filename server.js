@@ -27,22 +27,22 @@ app.use(morgan("dev"));
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productsRoutes);
-//app.use(express.static(path.join(__dirname, "/client/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 
-/* //rest api
+//rest api
 app.use('*', function(req,res){
   res.sendFile(path.join(__dirname, './client/build/index.html'))
 
-}) */
+}) 
 
 
 
-app.get("/", (req, res) => {
+/* app.get("/", (req, res) => {
   res.send({
     message: "Bienvenidos a Geekraft API",
   });
-}); 
+});  */
 
 //PORT
 const PORT = process.env.PORT || 8080;
